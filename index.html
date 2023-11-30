@@ -1,332 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.css" integrity="sha512-phGxLIsvHFArdI7IyLjv14dchvbVkEDaH95efvAae/y2exeWBQCQDpNFbOTdV1p4/pIa/XtbuDCnfhDEIXhvGQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-xxz5v3vz5t7z4x6xj11b6erz7r9ypc5f+emf5l5u5hi2b+a1usgr5i1co6w5zj5g"
-  crossorigin="anonymous">
-
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>FMT</title>
-</head>
-<body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="./assets/images/fmt_png.PNG" alt="Your Logo Alt Text">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Booking</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Terminals</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link login-link" href="#">Login</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Carousel -->
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="./assets/images/car.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption">
-          <h5 class="animate__animated animate__fadeInDown" style="animation-delay: 1s">Ready to Travel? Reserve Your Seat Today</h5>
-          <p class="animate__animated animate__backInLeft animate__delay-2s">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-             Maxime molestiae mollitia quam ipsa pariatur modi,
-
-          </p>
-          <p class="animate__animated animate__fadeInUp animate__delay-3s">
-            <a href="#">Book Now</a>
-          </p>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FMT - Fali Motor Transports</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/images/fmt_png.PNG" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="carousel-item">
-        <img src="./assets/images/2.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption">
-          <h5 class="animate__animated animate__fadeInDown" style="animation-delay: 1s">Second slide label</h5>
-          <p class="animate__animated animate__backInLeft animate__delay-2s ">
-            Some representative placeholder content for the second slide.
-          </p>
-          <p class="animate__animated animate__fadeInUp animate__delay-3s">
-            <a href="#">Book Now</a>
-          </p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="./assets/images/3.jpg" class="d-block w-100" alt="...">
-        <div class="carousel-caption">
-          <h5 class="animate__animated animate__fadeInDown" style="animation-delay: 1s">Third slide label</h5>
-          <p class="animate__animated animate__backInLeft animate__delay-2s ">
-            Some representative placeholder content for the third slide.
-          </p>
-          <p class="animate__animated animate__fadeInUp animate__delay-3s">
-            <a href="#">Book Now</a>
-          </p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+    </nav>
 
-  <!--services section-->
-  <section class="services">
-    <div class="container">
-        <h2 class="section-title">OUR SERVICES</h2>
-        <div class="services-cards">
-            <div class="services-card">
-                <div class="icon">
-                    <i class="fas fa-book"></i>
-                </div>
-                <h3 class="services-title">Round trips</h3>
-                <p class="services-description">Explore a vast collection of Igala words and their detailed definitions, all at your fingertips.</p>
-            </div>
-            <div class="services-card">
-                <div class="icon">
-                    <i class="fas fa-volume-up"></i>
-                </div>
-                <h3 class="services-title">Oneway trips </h3>
-                <p class="services-description">Listen to authentic audio pronunciations of Igala words to enhance your language skills.</p>
-            </div>
-            <div class="services-card">
-                <div class="icon">
-                    <i class="fas fa-comment"></i>
-                </div>
-                <h3 class="services-title">Charter</h3>
-                <p class="services-description">Understand the context and usage of Igala words through real-world examples and sentences.</p>
-            </div>
-            <div class="services-card">
-                <div class="icon">
-                    <i class="fas fa-exchange-alt"></i>
-                </div>
-                <h3 class="services-title">Waybill</h3>
-                <p class="services-description">Discover variations of Igala words, allowing you to explore nuances in meaning and usage.</p>
-            </div>
-            <div class="services-card">
-              <div class="icon">
-                  <i class="fas fa-language"></i>
-              </div>
-              <h3 class="services-title">Logistics</h3>
-              <p class="services-description">Effortlessly translate Igala words or phrases into other languages for clear communication.</p>
+    <div class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h1>Seamless Journeys, Effortless Booking.</h1>
+            <p>Our platform brings city-to-city travel to your fingertips. Book your seat and waybill your goods hassle-free from wherever you are, ensuring a smooth ride ahead.</p>
+            <button class="hero-button primary">Book Now</button>
+            <button class="hero-button outline">Contact Us</button>
           </div>
-        </div>
-    </div>
- </section>
-
-<!-- Quick book section -->
-<section id="services" class="services section-padding">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="section-header text-center pb-5">
-          <h2 class="section-title">Quick Book</h2>
-          <p>Passengers can quickly look through routes anytime. Always available</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-        <div class="card border-0" style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-          <div class="card-body">
-            <i class="bibi-subtract text-danger"></i>
-            <h3 class="card-title mt-3">Abuja ⇄ Lagos</h3>
-            <form>
-              <div class="form-group">
-                <label for="from">From:</label>
-                <input id="from" placeholder="Abuja == Utako" type="text" class="form-control" disabled>
-              </div>
-              <div class="form-group">
-                <label for="to">To:</label>
-                <input id="to" placeholder="Lagos == Ajah" type="text" class="form-control" disabled>
-              </div>
-              <div class="text-center mt-3">
-                <a href="#" class="btn btn-danger text-white">Book Now</a>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-        <div class="card border-0" style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-          <div class="card-body">
-            <h3 class="card-title mt-3">Abuja ⇄ Porthacourt</h3>
-            <form>
-              <div class="form-group">
-                <label for="from">From:</label>
-                <input id="from" placeholder="Abuja == Utako" type="text" class="form-control" disabled>
-              </div>
-              <div class="form-group">
-                <label for="to">To:</label>
-                <input id="to" placeholder="City - Location" type="text" class="form-control" disabled>
-              </div>
-              <div class="text-center mt-3">
-                <a href="#" class="btn btn-danger text-white">Book Now</a>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
-        <div class="card border-0" style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-          <div class="card-body">
-            <h3 class="card-title mt-3"> Porthacourt ⇄ Lagos </h3>
-            <form>
-              <div class="form-group">
-                <label for="from">From:</label>
-                <input id="from" placeholder="City - Location" type="text" class="form-control" disabled>
-              </div>
-              <div class="form-group">
-                <label for="to">To:</label>
-                <input id="to" placeholder="City - Location" type="text" class="form-control" disabled>
-              </div>
-              <div class="text-center mt-3">
-                <a href="#" class="btn btn-danger text-white">Book Now</a>
-              </div>
-            </form>
+          <div class="col-md-6">
+            <!-- You can add an image or other content on the right side if needed -->
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!--Why choosing us-->
-
-<section id="about" class="about-section-padding">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 col-md-12 col-12">
-        <div class="about-img">
-          <img src="./assets/images/fmt_png.PNG" alt="" class="img-fluid">
+    
+    <section class="timeline-section">
+      <div class="services-header">
+        <h1>Services</h1>
+      </div>
+      <div class="timeline-items">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content" data-aos="fade-right">
+            <h3>Seamless Booking</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content" data-aos="fade-left">
+            <h3> Load Waybilling </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content" data-aos="fade-right">
+            <h3>Airport Pickup</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content" data-aos="fade-left">
+            <h3>Round Trip</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content" data-aos="fade-right">
+            <h3>One Way Trip</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+        </div>
+        <!--
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content" data-aos="fade-left">
+            <h3>timeline item title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content" data-aos="fade-right">
+            <h3>timeline item title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
         </div>
       </div>
-      <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
-        <div class="about-text" style="text-align: left;">
-          <h2>Why Choosing Us</h2>
-          <p class="animate__animated animate__fadeInUp animate__delay-1s">
-            Lorem ipsum dolor sit amet 
-            consectetur adipisicing elit. Accusantium corrupti veritati
-            s laborum ullam vero,
-            iste consequuntur dolor provident architecto perferendis debitis. 
-            Commodi similique pariatur alias vitae iure perspiciatis rem odit.
-            consectetur adipisicing elit. Accusantium corrupti veritati
-            s laborum ullam vero,
-            iste consequuntur dolor provident architecto perferendis debitis. 
-            Commodi similique pariatur alias vitae iure perspiciatis rem odit
-            consectetur adipisicing elit. Accusantium corrupti veritati
-            s laborum ullam vero,
-            iste consequuntur dolor provident architecto perferendis debitis. 
-            Commodi similique pariatur alias vitae iure perspiciatis rem doit
-          </p>
-        </div>
-  
-      </div>
-    </div>
-  </div>
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- JavaScript and jQuery scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-</body>
+      -->
+    </section>
+    
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>
+ </body>
 </html>
+

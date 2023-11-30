@@ -181,12 +181,63 @@ h5.animate__animated.animate__fadeInDown {
 }
  /*-----quick book section-----*/
  
- .custom-card {
+.custom-card {
    width: 18rem;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
    margin: 10px;
- }
- .custom-button {
+}
+.custom-button {
    background-color: crimson;
    color: white;
- }
+}
+
+  /*-----car lists section-----*/
+  :root {
+    --primary: #ec994b;
+    --white: #ffffff;
+    --bg: #f5f5f5;
+  }
+  
+  html {
+    font-size: 62.5%;
+    font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  @media (min-width: 1440px) {
+    html {
+      zoom: 1.5;
+    }
+  }
+  
+  @media (min-width: 2560px) {
+    html {
+      zoom: 1.7;
+    }
+  }
+  
+  @media (min-width: 3860px) {
+    html {
+      zoom: 2.5;
+    }
+  }
+  
+  ::-webkit-scrollbar {
+    width: 1.3rem;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 1rem;
+    background: #797979;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #222224;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f9f9f9;
+  }
+  
+  
