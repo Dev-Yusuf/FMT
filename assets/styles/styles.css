@@ -82,7 +82,11 @@ body {
   color: var(--btn-red);
 }
 
-
+.modal-title {
+	color: var(--primary-red-dark);
+	font-weight: var(--w700);
+}
+  
 .timeline-section{
 	background-color: var(--secondary-red-light);
 	min-height: 100vh;
@@ -178,5 +182,24 @@ body {
 	}
 	.timeline-dot{
 		left:0;
+	}
+}
+
+.guide-container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	text-align: left;
+	padding: 20px;
+}
+
+.guide-container h1, .guide-container p {
+	margin: 20px;
+}
+
+@media (min-width: 768px) {
+	.guide-container {
+		flex-direction: row;
 	}
 }
