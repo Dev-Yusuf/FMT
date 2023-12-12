@@ -197,6 +197,7 @@ body {
   
   .city-container img {
 	width: 100%;
+	border-radius: 8px;
 	height: auto;
   }
   
@@ -240,13 +241,37 @@ body {
 	  margin: 10px 0;
 	}
   
-	.right-div .city-container {
-	  width: calc(100% - 20px); 
-	  margin: 10px 0;
-	  border-radius: 8px;
-	}
+	  .right-div .city-container {
+		width: calc(70% - 20px); /* Adjust the width with margin */
+		margin: 10px auto; /* Equal margin on both sides */
+		border-radius: 8px; /* Apply border-radius */
+		/* Add any other necessary styles */
+	
+		/* Adjust the size of the container */
+		max-width: 300px; /* Set the maximum width */
+		padding: 15px; /* Add padding for better spacing */
+	  }
+
+	  .right-div .city-container img {
+		width: 100%; /* Make the image responsive */
+		max-width: 100%; /* Adjust the maximum width of the image */
+		border-radius: 8px; /* Apply border-radius to the image */
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+		border: 2px solid #ddd; /* Add a border */
+		/* Add any other styles for the image as needed */
+	  }
   }
 
+	  .city-container .content {
+		position: absolute;
+		bottom: 10px;
+		left: 10px;
+		background-color: rgba(0, 0, 0, 0.7);
+		padding: 10px;
+		color: white;
+		width: calc(100% - 18px);
+		text-align: center;
+  }
   
   .timeline-items {
 	max-width: 1000px;
