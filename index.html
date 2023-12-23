@@ -13,7 +13,7 @@
     <nav class="navbar navbar-expand-lg bg-light fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="./assets/images/fmt_png.PNG" alt="logo">
+          <img src="./assets/images/brandlogo.jpg" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -230,7 +230,7 @@
       </div>
     </div>
     
-    
+ 
 
 
 
@@ -249,9 +249,32 @@
 
 
 
-
-
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script>
+      // Initialize and create the map
+      function initMap() {
+        // Create a map centered at a specific location (e.g., Abuja)
+        const map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: 9.0765, lng: 7.3986 }, // Coordinates for Abuja
+          zoom: 6 // Set the initial zoom level
+        });
+  
+        // Add markers for Abuja, Lagos, and Port Harcourt
+        const locations = [
+          { lat: 9.0765, lng: 7.3986, title: "Abuja" },
+          { lat: 6.5244, lng: 3.3792, title: "Lagos" },
+          { lat: 4.8156, lng: 7.0498, title: "Port Harcourt" }
+        ];
+  
+        locations.forEach(location => {
+          new google.maps.Marker({
+            position: location,
+            map: map,
+            title: location.title
+          });
+        });
+      }
+    </script>
 
     
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
