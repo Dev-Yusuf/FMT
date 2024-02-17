@@ -441,7 +441,7 @@ body {
 	margin-bottom: 20px;
 	width: calc(33.33% - 20px); /* Adjust width for 3 terminals, considering margins */
 	min-height: 300px; /* Adjust the height of the terminal */
-  }
+}
 
 
   @media (max-width: 768px) {
@@ -461,205 +461,142 @@ body {
 	height: auto; /* Change height to auto to maintain aspect ratio */
 	object-fit: cover;
 }
+
 footer {
 	position: relative;
 	width: 100%;
 	height: auto;
-	padding-top: 80px;
-	background-image: url('../images/f-bg.jpg');
-	background-repeat: no-repeat; /* Ensure the background image does not repeat */
-	background-size: cover; /* Cover the entire footer with the background image */
-	background-position: center; /* Center the background image horizontally and vertically */
-  }
-  
-  .footer-container{
+	padding: 20px;
+	background-color: #FF6B6B;
+}
+
+.footer-container {
 	width: 100%;
-	max-width: 2320px;
+	max-width: 1320px;
 	margin: 0 auto;
 	padding: 0 12px;
-  }
-  .footer-wrapper{
+}
+
+.footer-wrapper{
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
 	flex-wrap: wrap;
-  }
-  .footer-wrapper .footer-widget{
+}
+
+.footer-wrapper .footer-widget{
 	width: calc(20% - 30px);
 	margin: 0 15px 50px;
-	padding: 0 12px;
-  }
-  
-  .footer-wrapper .footer-widget:nth-child(1){
+	
+}
+
+.footer-wrapper .footer-widget:nth-child(1){
 	width: calc(40% - 50px);
-	margin-right: 15px;
-  }
-  
-  .footer-wrapper  .footer-widget .logo{
-	margin-bottom: 20px;
+	margin-right: 5px;
+}
+
+.footer-wrapper .footer-widget .logo {
+	margin-bottom: 30px;
 	vertical-align: middle;
-  }
-  
-  .footer-widget .logo {
-	max-width: 100px; /* Set a maximum width for the logo */
-	height: auto; /* Maintain aspect ratio */
-  }
-  
-  
-  .footer-wrapper  .footer-widget p{
-	color: var(--primary-white);
-	margin-bottom:20px;
+}
+
+@media (min-width: 769px) {
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 769px) {
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+.footer-wrapper .footer-widget p{
+	margin-bottom: 30px;
 	font-size: 16px;
 	line-height: 24px;
-  }
-  
-  .footer-widget .contact-info {
-	margin-top: 20px;
-  }
-  
-  .footer-widget .contact-item {
-	display: flex;
-	align-items: flex-start; /* Align items at the top */
-	margin-bottom: 10px;
-	color: var(--primary-white); /* Color for the contact text */
-	font-size: 14px; /* Adjust font size of contact text */
-  }
-  
-  .footer-widget .contact-item i {
-	width: 44px;
-	height: 44px;
-	margin-right: 10px;
-	background-color: var(--htexts);
-	border-radius: 50%;
-	font-size: 20px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-shrink: 0; /* Prevent icon from shrinking */
-  }
-  
-  .footer-widget .contact-item span {
-	font-size: 14px; /* Adjust font size of contact text */
-	margin-left: 20px;
-	word-wrap: break-word; /* Wrap long text */
-	flex: 1; /* Expand to fill remaining space */
-	margin-top: 9px;
-  }
-  
-  .footer-widget .contact-item i.bx {
-	/* Specific styles for the bx icons */
-	color: var(--primary); /* Color for the bx icons */
-  }
-  
-  .footer-widget .socials {
-	display: flex;
-	flex-direction: row; /* Ensure icons are displayed in a row */
-	align-items: center; /* Align items vertically at the center */
-	margin: 0; /* Remove default margins */
-	padding: 0; /* Remove default padding */
-  }
-  
-  .footer-widget .socials li {
-	list-style: none; /* Remove default list styles */
-	margin-right: 10px; /* Add space between icons */
-	margin-top: 40px;
-  }
-  
-  .footer-widget .socials li:last-child {
-	margin-right: 0; /* Remove margin from the last icon */
-  }
-  
-  .footer-wrapper  .footer-widget .socials li{
+}
+
+.footer-wrapper .footer-widget .socials{
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-  }
-  
-  .footer-wrapper  .footer-widget .socials li{
+}
+
+.footer-wrapper .footer-widget .socials li{
 	list-style: none;
-  }
-  
-  .footer-wrapper .footer-widget .socials li a{
+}
+
+.footer-wrapper .footer-widget .socials li a{
 	width: 44px;
 	height: 44px;
 	margin-right: 10px;
-	color: var(--primary);
-	background-color: var(--htexts);
+	color: #fff;
+	background-color: rgb(121, 0, 0);
 	border-radius: 50%;
 	font-size: 20px;
 	text-decoration: none;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	transition: all 0.3s ease-out;
-  }
-  
-  .footer-wrapper  .footer-widget .socials li a:hover{
-	background-color: var(--primeazure);
-	color: var(--htexts);
-  }
-  
-  .footer-wrapper  .footer-widget h6{
-	color: var(--primary);
+	transition: all 0.5s ease-out;
+}
+.footer-wrapper .footer-widget .socials li a:hover{
+	background-color: #FF0000;
+}
+
+.footer-wrapper .footer-widget h6{
+	color: var(--head-text-color);
 	margin: 10px 0 35px;
-	font-size: var(--spfont);
-	font-weight: var(--headweight);
-  }
-  
-  .footer-wrapper  .footer-widget .links{
+	font-size: var(--h2-fontsize);
+	font-weight: var(--w600);
+}
+
+.footer-wrapper .footer-widget .quick-links{
 	list-style: none;
-  }
-  
-  .footer-wrapper  .footer-widget .links li a{
-	color: var(--primary);
-	font-size: var(--regularfont);
+
+}
+
+.footer-wrapper .footer-widget .quick-links li a{
+	color: var(--primary-white);
+	font-size: var(--regular-fontsize);
 	text-decoration: none;
 	text-transform: capitalize;
-	line-height: 1.5em;
+	line-height: 32px;
 	transition: all 0.3s ease-out;
-  }
-  
-  .footer-wrapper  .footer-widget .links li a:hover{
-	color: #037ef3;
-  }
-  
-  .copyright-wrapper{
-	padding: 20px;
-	border-top: 1px solid grey;
-  }
-  
-  .copyright-wrapper p{
-	color: var(--primary);
-	font-size: 14px;
-	font-weight: 500;
-	text-align: center;
-  }
-  
-  .copyright-wrapper p a{
-	color: var(--primary);
-  }
-  
-  .copyright-wrapper p a:hover{
-	color:   #037ef3; ;
-  }
-  
-  @media (max-width: 992px){
+
+}
+
+.footer-wrapper .footer-widget .quick-links li a:hover{
+	color: var(--head-text-color);
+}
+
+.copyright-wrapper{
+	color: var(--primary-white);
+	padding: 20px 0;
+	border-top: 1px solid rgb(252, 252, 252);
+}
+
+@media (max-width: 992px){
 	.footer-container{
-	  max-width: 960px;
+		max-width: 960px;
 	}
-	.footer-wrapper .footer-widget,
 	.footer-wrapper .footer-widget:nth-child(1){
-	  width: calc(50% - 30px);
+		width: calc(30%-30px);
 	}
-  }
-  
-  @media (max-width:768px){
+	
+}
+
+@media (max-width: 768px){
 	.footer-container{
-	  max-width: 720px;
+		max-width: 720px;
 	}
-	.footer-wrapper .footer-widget,
+	.footer-wrapper .footer-widget, 
 	.footer-wrapper .footer-widget:nth-child(1){
-	  width: 100%;
-	  margin: 0 10px 50px;
+		width: 100%;
+		margin: 0 10px 50px;
 	}
-  }
+}
