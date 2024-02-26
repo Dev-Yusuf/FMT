@@ -17,7 +17,7 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-light fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img src="./assets/images/brandlogo.jpg" alt="logo">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,10 +26,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Pricing</a>
@@ -63,8 +63,8 @@
               <div class="form-floating">
                 <select id="select1" class="form-select">
                   <option>Abuja = Porthacourt</option>
-                  <option>Lagos = Porthacourt</option>
                   <option>Abuja = Lagos</option>
+                  <option>Abuja = Enugu</option>
                 </select>
               </div>
             </div>
@@ -84,7 +84,7 @@
         <div class="row align-items-center">
           <div class="col-md-6">
             <h1>Seamless Journeys, Effortless Booking.</h1>
-            <p>We city-to-city travel to your fingertips. Book your seat and waybill your goods hassle-free from wherever you are, ensuring a smooth ride ahead. Your safety is our priority</p>
+            <p>We bring city-to-city travel to your fingertips. Book your seat and waybill your goods hassle-free from wherever you are, ensuring a smooth ride ahead. Your safety is our priority</p>
             <button class="hero-button primary" data-bs-toggle="modal" data-bs-target="#booking-modal">Book Now</button>
             <button class="hero-button outline">Contact Us</button>
           </div>
@@ -138,7 +138,7 @@
         <div class="city-container">
           <img src="https://gigm.com/static/media/edo.0b4b899c.webp" alt="Image">
           <div class="content">
-            <p>Lagos to Porthacourt</p>
+            <p>Abuja to Enugu</p>
             <button>Book Now</button>
           </div>
         </div>
@@ -265,7 +265,7 @@
             <img src="./assets/images/brandlogo.jpg" class="logo">
           </a>
           <p class="moto">
-            Suite F3: 2B ABM plaza, plot 23, Ekukinam Street, Utako district Abuja
+            Suite F3: 2B SAY plaza, plot 23, Ekukinam Street, Utako district Abuja
           </p>
           <ul class="socials">
             <li>
@@ -289,7 +289,7 @@
         <div class="footer-widget">
           <h6>Company</h6>
           <ul class="quick-links">
-            <li><a href="">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="">How we work</a></li>
             <li><a href="">Our vehicles</a></li>
           </ul>
@@ -299,7 +299,7 @@
           <h6>support</h6>
           <ul class="quick-links">
             <li><a href="">Contact Us</a></li>
-            <li><a href="">FAQs</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
             <li><a href="">Our Terminals</a></li>
           </ul>
         </div>
@@ -317,52 +317,7 @@
       </div>
     </div>
    </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-    <script>
-      // Initialize and create the map
-      function initMap() {
-        // Create a map centered at a specific location (e.g., Abuja)
-        const map = new google.maps.Map(document.getElementById("map"), {
-          center: { lat: 9.0765, lng: 7.3986 }, // Coordinates for Abuja
-          zoom: 6 // Set the initial zoom level
-        });
-  
-        // Add markers for Abuja, Lagos, and Port Harcourt
-        const locations = [
-          { lat: 9.0765, lng: 7.3986, title: "Abuja" },
-          { lat: 6.5244, lng: 3.3792, title: "Lagos" },
-          { lat: 4.8156, lng: 7.0498, title: "Port Harcourt" }
-        ];
-  
-        locations.forEach(location => {
-          new google.maps.Marker({
-            position: location,
-            map: map,
-            title: location.title
-          });
-        });
-      }
-    </script>
-
-    
+ 
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
    <script>
