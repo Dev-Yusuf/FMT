@@ -634,6 +634,149 @@ body {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
 }
 
+
+/* ------- the style for price page --------*/
+
+.price-container {
+	max-width: 800px;
+	margin-top: 150px; /* Adjust this value as needed */
+    margin-bottom: 90px; /* Added margin bottom for better spacing */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.price-container h1 {
+	text-align: center;
+	color: #333;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+th, td {
+	padding: 10px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+th {
+	background-color: #f2f2f2;
+	color: #333;
+	font-weight: bold;
+}
+
+.disclaimer {
+	margin-top: 20px;
+	padding: 10px;
+	background-color: #f2f2f2; /* Light gray */
+	border-radius: 5px;
+	text-align: center;
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 10px;
+	}
+	table {
+		font-size: 14px;
+	}
+}
+
+/*----------- FAQs page styles ----------------*/
+.faqs-container {
+	margin-top: 150px;
+	max-width: 800px;
+	margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 90px;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faqs-accordion {
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: background-color 0.3s ease; /* Smooth background color transition */
+	border-bottom: 1px solid #ddd;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.active, .faqs-accordion:hover {
+	background-color: #f7f7f7; 
+}
+
+.faqs-panel {
+	padding: 0 18px;
+	display: none;
+	background-color: white;
+	overflow: hidden;
+	margin-top: 10px;
+	transition: max-height 0.3s ease; /* Smooth height transition */
+}
+
+.faqs-answer {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #333; /* Adjusted font color */
+}
+
+.fas {
+	color: #555; /* Adjusted icon color */
+}
+
+@media (max-width: 768px) {
+	.container {
+		padding: 10px;
+	}
+}
+
+
+/* ========= the vehicle page styles ================= */
+
+.car-gallery {
+	margin-top: 150px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 20px;
+	padding: 20px;
+  }
+  
+  .car {
+	width: 300px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	overflow: hidden;
+  }
+  
+  .car img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+  }
+  
+  .car h3,
+  .car p {
+	padding: 10px;
+	text-align: center;
+  }
+
 /* ---------- footer styles ---------- */
 footer {
     position: relative;
